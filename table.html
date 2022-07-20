@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+    <style>
+        table {
+            width: 100%;
+
+        }
+        td {
+            text-align: center;
+        }
+        table {
+            border: darkred;
+        }
+        h1 {
+            color: darkorange;
+            
+        }
+        #last {
+            padding: 10px;;
+            background-colore;
+            
+             align="center"
+        }
+        tr:nth-child(even) {
+            background-color: #dddd;
+        }
+        tr:nth-child(odd) {
+            background-color: darkblue;
+        } 
+        body {
+            background-color: darkgray;
+        }
+        #resim {
+            background-image: url("https://picsum.photos/id/684/600/400"); 
+            background-size:cover;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablolar</h1>
+    <hr>
+    <table border="1"   >
+        <caption style="font: size ;">Haftalık Dersler</caption>
+        <thead>
+            <tr>
+                <th>Günler  </th>
+                <th>Dersler</th>
+                <th>Notlar</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td id="resim">Pazartesi</td>
+                <td>Html</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Salı</td>
+                <td>Git</td>
+                <td rowspan="2">90</td>
+            </tr>
+            <tr>
+                <td>Çarşamba</td>
+                <td>Javascript</td>
+                <!-- <td>90</td> -->
+                
+            </tr>
+            <tr>
+                <td rowspan="2" >Perşembe</td>
+                <td>React</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <!-- <td>Perşembe</td> -->
+                <td>React-Native</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Cuma</td>
+                <td>Django</td>
+                <td>80</td>
+            </tr>
+            <tr >
+                <td id="last" colspan="3">Cumartesi Tatil</td>
+                
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+</body>
+</html>
